@@ -1,0 +1,20 @@
+{% if bookmarks %}
+    <h2>Share</h2>
+    <ul>
+        {% for bookmark in bookmarks %}
+            <li>
+                <span class="bookmark {{ bookmark.slug }}">
+                    {% if book.js %}
+                        <script type="javascript">
+                            {{ bookmark.js|safe }}
+                        </script>
+                    {% endif %}
+                        <a href="{% url bookmark_referer bookmark.slug bookmark.content_type bookmark.object_pk bookmark.url %}" title="{{ bookmark.title }}" rel="nofollow">
+                            <img src="{{ MEDIA_URL }}social_bookmarking/img/{{ bookmark.image }}" width="16" height="16" alt="{{ bookmark.title }}" />
+                        </a>
+                        <span class="counter">{{ bookmark.visits }}</span>
+                </span>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

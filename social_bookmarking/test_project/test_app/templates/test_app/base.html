@@ -1,23 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}" xml:lang="{{ LANGUAGE_CODE }}" lang="{{ LANGUAGE_CODE }}">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        
         <title>{% block head_title %}{% endblock %}</title>
-        <!--[if IE]><style>
+        <!--[if IE]>
+        <style type="text/css" media="screen">
             div {
                 zoom: 1; /* trigger hasLayout */
             }
-        </style><![endif]-->
+        </style>
+        <![endif]-->
+        
+        <style type="text/css" media="screen">
+            a img {
+                border-width: 0;
+            }
+        </style>
         {% block extra_head_base %}
             {% block extra_head %}{% endblock %}
         {% endblock %}
     </head>
     <body>
-        <p>
-            <a href="{% url test_index %}">Basic test</a> 
-        </p>        
-        {% block body %}
-        {% endblock %}
+        <div id="menu">
+            <ul>
+                <li><a href="{% url test:index %}">Basic test</a></li>
+                <li><a href="{% url test:counter %}">Counter test</a></li>
+            </ul>
+        </div>
+        
+        <div id="body">
+            {% block body %}
+            {% endblock %}
+        </div>
     </body>
 </html>

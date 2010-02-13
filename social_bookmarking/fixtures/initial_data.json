@@ -1,0 +1,104 @@
+[{
+    "pk": 1,
+    "model": "social_bookmarking.bookmark",
+    "fields": {
+        "status": 2,
+        "description": "",
+        "title": "del.icio.us",
+        "url": "http://del.icio.us/post?url=%(url)s&title=%(title)s",
+        "image": "delicious.png",
+        "slug": "delicious",
+        "js": ""
+    }
+},
+{
+    "pk": 2,
+    "model": "social_bookmarking.bookmark",
+    "fields": {
+        "status": 2,
+        "description": "",
+        "title": "Diigo",
+        "url": "https://secure.diigo.com/sign-in?referInfo=%(url)s&title=%(title)s",
+        "image": "diigo.png",
+        "slug": "diigo",
+        "js": ""
+    }
+},
+{
+    "pk": 3,
+    "model": "social_bookmarking.bookmark",
+    "fields": {
+        "status": 2,
+        "description": "",
+        "title": "Digg",
+        "url": "http://digg.com/submit?phase=2&url=%(url)s&title=%(title)s",
+        "image": "digg.png",
+        "slug": "digg",
+        "js": ""
+    }
+},
+{
+    "pk": 4,
+    "model": "social_bookmarking.bookmark",
+    "fields": {
+        "status": 2,
+        "description": "",
+        "title": "Facebook",
+        "url": "http://www.facebook.com/share.php?u=%(url)s&t=%(title)s",
+        "image": "facebook.png",
+        "slug": "facebook",
+        "js": ""
+    }
+},
+{
+    "pk": 5,
+    "model": "social_bookmarking.bookmark",
+    "fields": {
+        "status": 2,
+        "description": "",
+        "title": "Technorati",
+        "url": "http://technorati.com/faves?add=%(url)s",
+        "image": "technorati.png",
+        "slug": "technorati",
+        "js": ""
+    }
+},
+{
+    "pk": 6,
+    "model": "social_bookmarking.bookmark",
+    "fields": {
+        "status": 2,
+        "description": "",
+        "title": "Twitter",
+        "url": "http://twitter.com/home?status=%(title)s %(url)s",
+        "image": "twitter.png",
+        "slug": "twitter",
+        "js": ""
+    }
+},
+{
+    "pk": 7,
+    "model": "social_bookmarking.bookmark",
+    "fields": {
+        "status": 2,
+        "description": "",
+        "title": "Friendfeed",
+        "url": "http://friendfeed.com/?url=%(url)s&title=%(title)s",
+        "image": "friendfeed.png",
+        "slug": "friendfeed",
+        "js": ""
+    }
+},
+{
+    "pk": 8,
+    "model": "social_bookmarking.bookmark",
+    "fields": {
+        "status": 2,
+        "description": "",
+        "title": "Wikio",
+        "url": "http://www.wikio.fr/sharethis?url=%(url)s&title=%(title)s",
+        "image": "wikio.png",
+        "slug": "wikio",
+        "js": ""
+    }
+}]

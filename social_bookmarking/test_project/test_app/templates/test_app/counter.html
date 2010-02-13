@@ -1,0 +1,7 @@
+{% extends "test_app/base.html" %}
+
+{% load social_bookmarking_tags %}
+
+{% block body %}
+    {% show_bookmarks_related "My current website" url guinea_pig %}
+{% endblock %}

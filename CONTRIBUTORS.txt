@@ -1,1 +1,2 @@
 Daniel Greenfeld <pydanny@gmail.com>
+Florent Messa <florent.messa@gmail.com>
