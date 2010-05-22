@@ -1,5 +1,4 @@
 from django.conf.urls.defaults import *
-from django.forms.fields import url_re
 
 from social_bookmarking.views import bookmark_referer
 
