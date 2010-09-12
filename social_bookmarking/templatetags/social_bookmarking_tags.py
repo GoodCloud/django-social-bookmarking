@@ -49,6 +49,9 @@ def show_bookmarks_related(context, title, url, object, description=""):
     
     if not isinstance(object, models.Model):
         raise TypeError, "object must be a valid Model"
+
+    if not url.startswith('http'):
+        url = context['request'].build_absolute_uri(url)
     
     bookmarks = Bookmark.objects.get_active().values()
     content_type = ContentType.objects.get_for_model(object)
